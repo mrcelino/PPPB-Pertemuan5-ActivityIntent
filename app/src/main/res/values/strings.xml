@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Register</string>
+    <string name="screen_title_register">Register</string>
+    <string name="text_confirmation">By Checking the box you agree to our <font color="#525BFF">Terms</font> and <font color="#525BFF">Conditions.</font></string>
+    <string name="text_acc_confirmation">Already Have an Account? <font color="#525BFF">Log In</font></string>
+    <string name="text_new_member">New Member? <font color="#525BFF">Register</font></string>
+    <string name="screen_title_login">Login</string>
+    <string name="checkbox_remember_me">Remember Me</string>
+    <string name="screen_title_homepage">Homepage</string>
+</resources>

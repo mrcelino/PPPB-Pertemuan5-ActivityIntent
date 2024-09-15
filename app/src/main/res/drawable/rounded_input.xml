@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow Layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#66000000"/> <!-- Semi-transparent shadow color -->
+            <corners android:radius="15dp" /> <!-- Corner radius for shadow -->
+        </shape>
+    </item>
+
+    <!-- Input Background Layer -->
+    <item android:left="0dp" android:right="0dp" android:top="0dp" android:bottom="4dp"> <!-- Offset to create shadow effect -->
+        <shape android:shape="rectangle">
+            <solid android:color="@color/input"/> <!-- Background color for the input field -->
+            <corners android:radius="15dp" /> <!-- Corner radius for background -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Register"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="40dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        style="@style/InputLayout"
+        android:hint="Username"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_user"
+            style="@style/EditText"
+            android:inputType="text"
+            android:drawableStart="@drawable/baseline_person" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        style="@style/InputLayout"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_email"
+            style="@style/EditText"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/baseline_email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        style="@style/InputLayout"
+        android:hint="Phone"
+        app:boxStrokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_phone"
+            style="@style/EditText"
+            android:inputType="phone"
+            android:drawableStart="@drawable/baseline_phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        style="@style/InputLayout"
+        android:hint="Password"
+        app:boxStrokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_password"
+            style="@style/EditText"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/baseline_person"
+            android:drawableEnd="@drawable/baseline_password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/term_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/text_confirmation"
+        android:textSize="10sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsbold"
+        android:background="@drawable/blue_button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/text_acc_confirmation"
+        android:textSize="11sp" />
+</LinearLayout>

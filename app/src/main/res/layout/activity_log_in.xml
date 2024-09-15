@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="40dp"
+        android:text="Login"
+        android:textSize="28sp"
+        android:fontFamily="@font/poppinsbold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        style="@style/InputLayout"
+        android:hint="Username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_user"
+            style="@style/EditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        style="@style/InputLayout"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_password"
+            style="@style/EditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkBox_RM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"
+            android:layout_marginRight="110dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="12sp"
+            android:padding="2dp"/>
+        <TextView
+            android:id="@+id/tv_forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password?"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsbold"
+        android:background="@drawable/blue_button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/text_new_member"
+        android:textSize="14sp" />
+
+</LinearLayout>
